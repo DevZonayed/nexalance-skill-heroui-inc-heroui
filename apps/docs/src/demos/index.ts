@@ -1809,9 +1809,9 @@ export const demos: Record<string, DemoItem> = {
     component: TextDemos.Prose,
     file: "text/prose.tsx",
   },
-  "text-render": {
-    component: TextDemos.Render,
-    file: "text/render.tsx",
+  "text-render-props": {
+    component: TextDemos.RenderProps,
+    file: "text/render-props.tsx",
   },
   // TextField demos
   "textfield-basic": {
