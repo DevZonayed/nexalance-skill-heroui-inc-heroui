@@ -35,7 +35,47 @@
 }
 
 .text-prose code {
-  @apply rounded-medium bg-default-100 px-1.5 py-0.5 font-mono text-sm text-foreground;
+  @apply rounded-md bg-default px-1.5 py-0.5 font-mono text-sm text-foreground;
+}
+
+.text-prose a {
+  @apply font-medium text-link underline underline-offset-4;
+}
+
+.text-prose blockquote {
+  @apply mt-4 border-l-4 border-border pl-4 italic text-muted;
+}
+
+.text-prose ul {
+  @apply my-4 list-disc space-y-2 pl-6;
+}
+
+.text-prose ol {
+  @apply my-4 list-decimal space-y-2 pl-6;
+}
+
+.text-prose li {
+  @apply text-base leading-7;
+}
+
+.text-prose hr {
+  @apply my-8 border-separator;
+}
+
+.text-prose pre {
+  @apply my-4 overflow-x-auto rounded-xl bg-default p-4 font-mono text-sm leading-relaxed;
+}
+
+.text-prose strong {
+  @apply font-semibold text-foreground;
+}
+
+.text-prose em {
+  @apply italic;
+}
+
+.text-prose img {
+  @apply my-4 rounded-xl;
 }
 
 .text--h1 {
@@ -75,7 +115,7 @@
 }
 
 .text--code {
-  @apply rounded-medium bg-default-100 px-1.5 py-0.5 font-mono text-sm text-foreground;
+  @apply rounded-md bg-default px-1.5 py-0.5 font-mono text-sm text-foreground;
 }
 
 .text--align-start {
@@ -99,7 +139,7 @@
 }
 
 .text--color-muted {
-  @apply text-default-500;
+  @apply text-muted;
 }
 
 .text--truncate {
