@@ -1813,6 +1813,10 @@ export const demos: Record<string, DemoItem> = {
     component: TextDemos.RenderProps,
     file: "text/render-props.tsx",
   },
+  "text-typography-scale": {
+    component: TextDemos.TypographyScale,
+    file: "text/typography-scale.tsx",
+  },
   // TextField demos
   "textfield-basic": {
     component: TextFieldDemos.Basic,
