@@ -126,12 +126,17 @@ function genAccent(l, c, h, fgOverride) {
   const accent = fmt({c, h, l});
   const fg = fgOverride ?? accentForeground(l, c, h);
 
+  // For light accents (l > 0.65), derive a darker version for soft-foreground
+  // so text on secondary buttons and chips stays readable.
+  const softFg =
+    l > 0.65 ? fmt({c: Math.min(c * 1.4, 0.25), h, l: Math.max(l - 0.35, 0.35)}) : accent;
+
   return {
     "--accent": accent,
     "--accent-foreground": fg,
     "--accent-hover": `color-mix(in oklab, ${accent} 90%, ${fg} 10%)`,
     "--accent-soft": `color-mix(in oklab, ${accent} 15%, transparent)`,
-    "--accent-soft-foreground": accent,
+    "--accent-soft-foreground": softFg,
     "--accent-soft-hover": `color-mix(in oklab, ${accent} 20%, transparent)`,
     "--focus": accent,
   };
