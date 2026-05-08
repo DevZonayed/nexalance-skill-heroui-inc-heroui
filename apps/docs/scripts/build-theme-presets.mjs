@@ -322,6 +322,101 @@ const PRESETS = [
       },
     },
   },
+  {
+    accentHex: "#1ED760",
+    base: 0.002,
+    formRadius: "extra-small",
+    id: "spotify",
+    radius: "medium",
+    semanticOverrides: {
+      dark: {
+        danger: {color: "oklch(0.5931 0.2338 25.42)"},
+        success: {color: "oklch(0.7697 0.2124 148.67)"},
+        warning: {color: "oklch(0.7921 0.1626 67.42)"},
+      },
+      light: {
+        danger: {color: "oklch(0.5509 0.2166 25.29)"},
+        success: {color: "oklch(0.6072 0.1647 149.02)"},
+        warning: {color: "oklch(0.6972 0.1687 54.22)"},
+      },
+    },
+  },
+  {
+    accentHex: "#4F44E0",
+    base: 0.002,
+    formRadius: "extra-small",
+    id: "coinbase",
+    radius: "medium",
+    semanticOverrides: {
+      dark: {
+        danger: {color: "oklch(0.6545 0.2145 22.31)"},
+        success: {color: "oklch(0.7574 0.180554 156.931)"},
+        warning: {color: "oklch(0.8095 0.1119 61.69)"},
+      },
+      light: {
+        danger: {color: "oklch(0.5507 0.2062 24)"},
+        success: {color: "oklch(0.5438 0.1268 157.17)"},
+        warning: {color: "oklch(0.8095 0.1119 61.69)"},
+      },
+    },
+  },
+  {
+    accentHex: "#FF5A5F",
+    base: 0,
+    formRadius: "large",
+    id: "airbnb",
+    radius: "medium",
+    semanticOverrides: {
+      dark: {
+        accentForeground: "oklch(0.9911 0 0)",
+        danger: {color: "oklch(0.5392 0.1816 33.72)", foreground: "oklch(0.9911 0 0)"},
+        success: {color: "oklch(0.652 0.114864 185.0749)", foreground: "oklch(0.9911 0 0)"},
+        warning: {color: "oklch(0.8197 0.170602 78.4658)"},
+      },
+      light: {
+        accentForeground: "oklch(0.9911 0 0)",
+        danger: {color: "oklch(0.5392 0.1816 33.72)", foreground: "oklch(0.9911 0 0)"},
+        success: {color: "oklch(0.5573 0.0947 199.48)", foreground: "oklch(0.9911 0 0)"},
+        warning: {color: "oklch(0.6904 0.1972 38.75)", foreground: "oklch(0.9911 0 0)"},
+      },
+    },
+  },
+  {
+    accentHex: "#5865F2",
+    base: 0.01,
+    formRadius: "large",
+    id: "discord",
+    radius: "small",
+    semanticOverrides: {
+      dark: {
+        danger: {color: "oklch(0.6318 0.2075 24.57)"},
+        success: {color: "oklch(0.8548 0.1967 150.16)"},
+        warning: {color: "oklch(0.9218 0.1571 99.87)"},
+      },
+      light: {
+        danger: {color: "oklch(0.5884 0.1993 24.39)"},
+        success: {color: "oklch(0.532 0.1238 151.57)"},
+        warning: {color: "oklch(0.9218 0.1571 99.87)"},
+      },
+    },
+  },
+  {
+    accentHex: "#FF6600",
+    base: 0.01,
+    formRadius: "extra-large",
+    id: "rabbit",
+    radius: "medium",
+    semanticOverrides: {
+      dark: {
+        danger: {color: "oklch(0.6291 0.2565 29.09)"},
+        success: {color: "oklch(0.7113 0.2043 140.81)"},
+      },
+      light: {
+        danger: {color: "oklch(0.6291 0.2565 29.09)"},
+        success: {color: "oklch(0.7113 0.2043 140.81)"},
+      },
+    },
+  },
 ];
 
 // ---------------------------------------------------------------------------

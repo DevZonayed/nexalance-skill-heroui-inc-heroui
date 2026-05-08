@@ -10,12 +10,17 @@ import Image from "next/image";
 import {useCallback, useEffect, useMemo, useState} from "react";
 
 import {themeValuesById} from "@/app/themes/constants";
+import airbnbTheme from "@/assets/themes/airbnb.png";
 import blackTheme from "@/assets/themes/black.png";
+import coinbaseTheme from "@/assets/themes/coinbase.png";
 import defaultTheme from "@/assets/themes/default.png";
+import discordTheme from "@/assets/themes/discord.png";
 import lavenderTheme from "@/assets/themes/lavender.png";
 import mintTheme from "@/assets/themes/mint.png";
 import netflixTheme from "@/assets/themes/netflix.png";
+import rabbitTheme from "@/assets/themes/rabbit.png";
 import skyTheme from "@/assets/themes/sky.png";
+import spotifyTheme from "@/assets/themes/spotify.png";
 import {cn} from "@/utils/cn";
 
 const STORAGE_KEY = "heroui-docs-design-theme";
@@ -33,6 +38,11 @@ const THEMES: ThemeOption[] = [
   {id: "mint", image: mintTheme, label: "Mint"},
   {id: "netflix", image: netflixTheme, label: "Netflix"},
   {id: "uber", image: blackTheme, label: "Uber"},
+  {id: "spotify", image: spotifyTheme, label: "Spotify"},
+  {id: "coinbase", image: coinbaseTheme, label: "Coinbase"},
+  {id: "airbnb", image: airbnbTheme, label: "Airbnb"},
+  {id: "discord", image: discordTheme, label: "Discord"},
+  {id: "rabbit", image: rabbitTheme, label: "Rabbit"},
 ];
 
 function removeThemeCssLink() {
@@ -142,7 +152,7 @@ export function DesignThemeSelector() {
             <span className="hidden sm:inline">{showAvatar ? current.label : "Theme"}</span>
           </Button>
         </Popover.Trigger>
-        <Popover.Content className="w-[228px] rounded-3xl" placement="bottom">
+        <Popover.Content className="w-[248px] rounded-3xl" placement="bottom">
           <Popover.Dialog className="p-4">
             <ListBox
               aria-label="Design theme"
