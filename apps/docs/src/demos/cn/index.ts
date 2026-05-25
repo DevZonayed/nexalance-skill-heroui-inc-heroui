@@ -622,6 +622,10 @@ export const demos: Record<string, DemoItem> = {
     component: ChipDemos.Statuses,
     file: "cn/chip/statuses.tsx",
   },
+  "chip-vibrant-palette": {
+    component: ChipDemos.VibrantPalette,
+    file: "cn/chip/vibrant-palette.tsx",
+  },
   // ColorField demos
   "color-field-basic": {
     component: ColorFieldDemos.Basic,
@@ -2102,6 +2106,10 @@ export const demos: Record<string, DemoItem> = {
   "list-box-multi-select": {
     component: ListBoxDemos.MultiSelect,
     file: "cn/list-box/multi-select.tsx",
+  },
+  "list-box-scrollbar-modes": {
+    component: ListBoxDemos.ScrollbarModes,
+    file: "cn/list-box/scrollbar-modes.tsx",
   },
   "list-box-with-disabled-items": {
     component: ListBoxDemos.WithDisabledItems,

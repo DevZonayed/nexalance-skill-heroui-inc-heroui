@@ -143,6 +143,11 @@
     gap: 0;
   }
 
+  nav > ul > li > a,
+  nav > ul:last-of-type > li > a:last-of-type {
+    @apply ml-0 rounded-none border-none p-2;
+  }
+
   li > a {
     color: var(--muted);
   }

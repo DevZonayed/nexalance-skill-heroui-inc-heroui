@@ -598,13 +598,18 @@ HeroUI applies a shared scrollbar style to component scroll areas (tables, popov
 
 | Mode | `data-scrollbar` | Behavior |
 |------|------------------|----------|
-| HeroUI (default) | *(unset)* | Thin thumb from theme tokens |
+| HeroUI thin | *(unset)* or `thin` | Thin thumb from theme tokens |
 | OS / browser | `default` | Native scrollbars (`auto`) |
 | Hidden | `none` | No visible scrollbar (`scrollbar-width: none`) |
 
 ```html
 <!-- Native scrollbars everywhere -->
 <html data-scrollbar="default">
+
+<!-- Restore HeroUI scrollbars in one subtree -->
+<main data-scrollbar="thin">
+  ...
+</main>
 
 <!-- Hide scrollbars in one subtree (e.g. a popover) -->
 <div data-scrollbar="none">
@@ -640,10 +645,12 @@ HeroUI applies a shared scrollbar style to component scroll areas (tables, popov
   ...
 </Table>
 
+<Drawer.Content data-scrollbar="thin" />
+
 <Calendar.YearPickerGrid data-scrollbar="none" />
 ```
 
-**Custom overflow areas** — use the `scrollbar`, `scrollbar-default`, or `scrollbar-none` utilities from `@heroui/styles` on your own elements. See [Styling](/docs/handbook/styling) for class-based overrides.
+**Custom overflow areas** — use the `scrollbar`, `scrollbar-thin`, `scrollbar-default`, or `scrollbar-none` utilities from `@heroui/styles` on your own elements. See [Styling](/docs/handbook/styling) for class-based overrides.
 
 > **Note**: Some components hide scrollbars by default (date picker popovers, color picker, secondary tabs). Nested scroll slots (e.g. the calendar year picker inside a date picker) keep HeroUI scrollbars because `scrollbar-none` only affects the element it is applied to, not descendants using `@apply scrollbar`.
 

@@ -48,7 +48,7 @@ Update to the latest version:
 
 ### `Text` → `Typography`
 
-The component shipped in [v3.0.4](/docs/releases/v3-0-4) used `text-*` BEM modifiers, which collide with Tailwind's `text-*` utility family. `tailwind-variants` runs `tailwind-merge` on every variant composition and dedupes `text--body-sm`, `text--color-muted`, `text--weight-normal` to a single class — silently dropping the others.
+The component shipped in [v3.0.4](/docs/react/releases/v3-0-4) used `text-*` BEM modifiers, which collide with Tailwind's `text-*` utility family. `tailwind-variants` runs `tailwind-merge` on every variant composition and dedupes `text--body-sm`, `text--color-muted`, `text--weight-normal` to a single class — silently dropping the others.
 
 Renaming the block to `typography` permanently fixes the collision ([#6505](https://github.com/heroui-inc/heroui/pull/6505), closes [#6497](https://github.com/heroui-inc/heroui/issues/6497)).
 
