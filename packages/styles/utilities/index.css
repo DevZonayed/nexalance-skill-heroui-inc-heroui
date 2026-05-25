@@ -62,6 +62,12 @@
   scrollbar-gutter: var(--scrollbar-gutter);
 }
 
+@utility scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-gutter: auto;
+}
+
 @utility scrollbar-default {
   scrollbar-width: auto;
   scrollbar-color: auto;

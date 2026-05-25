@@ -48,7 +48,7 @@ github:
 
 ### `Text` → `Typography`
 
-[v3.0.4](/docs/releases/v3-0-4) 中发布的该组件使用了 `text-*` BEM 修饰符，与 Tailwind 的 `text-*` 工具类家族冲突。`tailwind-variants` 在每次变体组合时都会运行 `tailwind-merge`，并将 `text--body-sm`、`text--color-muted`、`text--weight-normal` 去重为单个类名——从而静默丢弃其他类名。
+[v3.0.4](/docs/react/releases/v3-0-4) 中发布的该组件使用了 `text-*` BEM 修饰符，与 Tailwind 的 `text-*` 工具类家族冲突。`tailwind-variants` 在每次变体组合时都会运行 `tailwind-merge`，并将 `text--body-sm`、`text--color-muted`、`text--weight-normal` 去重为单个类名——从而静默丢弃其他类名。
 
 将块名重命名为 `typography` 可永久解决该冲突 ([#6505](https://github.com/heroui-inc/heroui/pull/6505)，修复 [#6497](https://github.com/heroui-inc/heroui/issues/6497))。
 
