@@ -12,7 +12,7 @@ export function LoginDemo() {
   const t = demos.login;
 
   return (
-    <Card className="w-full max-w-[320px] items-start justify-center p-5">
+    <Card className="w-[320px] max-w-full items-start justify-center p-5">
       <Card.Header className="flex w-full items-center justify-center gap-2">
         <Avatar>
           <Avatar.Fallback>
@@ -22,8 +22,8 @@ export function LoginDemo() {
         <Card.Title>{t.title}</Card.Title>
         <CloseButton className="absolute top-3 right-3" />
       </Card.Header>
-      <Card.Content className="gap-2">
-        <p className="text-center text-sm font-medium text-muted">{t.trialNote}</p>
+      <Card.Content className="w-full gap-2">
+        <p className="text-center text-sm font-medium text-balance text-muted">{t.trialNote}</p>
         <Button className="w-full">{t.getStarted}</Button>
         <div className="flex w-full items-center gap-2 py-2">
           <Separator className="flex-1" />
